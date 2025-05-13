@@ -5,12 +5,10 @@ function App() {
   
 
   return (
-   <div>
     <Routes>
        <Route index element={<Home />} />
        <Route path='/login' element={<Home />}/>
     </Routes>
-   </div>
   )
 }
 
