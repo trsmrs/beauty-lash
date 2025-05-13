@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom"
 
 
 export default function Home() {
+    const navigate = useNavigate()
     return (
         <div id="main-container" className="border bg-pink-200 min-h-dvh mx-auto rounded-2xl mb-10">
             {/* cabeçalho */}
@@ -14,7 +16,7 @@ export default function Home() {
             <div className="bg-red-500 rounded-4xl mt-15
                 flex justify-center h-40 p-2 w-[95%] mx-auto
             ">
-                <h3 className="font-bold">Look Awesome & Save Some</h3>
+                <h3 className="font-bold text-3xl">Look Awesome & Save Some</h3>
                 <img src="/img/model.png" alt="modelo-foto" className="w-40" />
             </div>
 
@@ -99,7 +101,7 @@ export default function Home() {
                 <button>
                     <img src="https://img.icons8.com/?size=100&id=I7e8MmWNkLY0&format=png&color=000000" alt="" className="w-15" />
                 </button>
-                <button>
+                <button className="" onClick={()=> navigate('/Scheduling')}>
                     <img src="https://img.icons8.com/?size=100&id=10053&format=png&color=000000" alt="" className="w-15" />
                 </button>
                 <button>
