@@ -18,7 +18,6 @@ export default function Home() {
                 <img src="/img/model.png" alt="modelo-foto" className="w-40" />
             </div>
 
-
             {/* Categorias */}
             <div id="categorias" className="text-left mt-4">
 
